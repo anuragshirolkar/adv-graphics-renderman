@@ -79,7 +79,7 @@ AttributeBegin
 	# left hand
 	TransformBegin
 		Translate 0.65 0.65 0
-		Rotate 10 1 0 0
+		Rotate -10 1 0 0
 		TransformBegin
 			Scale 0.3 0.3 0.3
 			Color [0.7 0.13 0.13]
@@ -158,7 +158,58 @@ AttributeBegin
 		
 	TransformEnd
 
-	
+	# left leg
+	TransformBegin
+		Translate 0.25 -0.25 0
+		TransformBegin
+			Translate 0 -0.3 0
+			Scale 0.4 0.7 0.4
+			ReadArchive "cube.rib"
+		TransformEnd
+		TransformBegin
+			Color [0.16 0.3 0.8]
+			Translate 0 -0.7 -0.05
+			TransformBegin
+				Translate 0 -0.3 0
+				Scale 0.45 0.7 0.45
+				ReadArchive "cube.rib"
+			TransformEnd
+			TransformBegin
+				Translate 0 -0.7 -0.075
+				Scale 0.45 0.2 0.6
+				ReadArchive "cube.rib"
+			TransformEnd
+			Color [1 1 1]
+		TransformEnd
+	TransformEnd
+
+	# right leg
+	TransformBegin
+		Translate -0.25 -0.25 0
+		TransformBegin
+			Translate 0 -0.3 0
+			Scale 0.4 0.7 0.4
+			ReadArchive "cube.rib"
+		TransformEnd
+		TransformBegin
+			Color [0.16 0.3 0.8]
+			Translate 0 -0.7 -0.05
+			TransformBegin
+				Translate 0 -0.3 0
+				Scale 0.45 0.7 0.45
+				ReadArchive "cube.rib"
+			TransformEnd
+			TransformBegin
+				Translate 0 -0.7 -0.075
+				Scale 0.45 0.2 0.6
+				ReadArchive "cube.rib"
+			TransformEnd
+			Color [1 1 1]
+		TransformEnd
+	TransformEnd
+
+
+
 
 	
 AttributeEnd
